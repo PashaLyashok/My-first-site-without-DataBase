@@ -61,7 +61,9 @@ body {
 
 .container_bilboard,
 .container_services,
-.container_prices {
+.container_prices,
+.container_about-php,
+.container_contacts {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -82,7 +84,9 @@ body {
 .bil_hr,
 .services hr,
 .prices hr,
-.portfolio hr{
+.portfolio hr,
+.about-php hr,
+.contacts hr{
     width: 15%;
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +116,17 @@ body {
     outline: none;
 }
 
-.about,
+.bilboard_a {
+    color: #fff;
+    text-decoration: none; 
+}
+
+.bilboard_a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
 .prices {
     background-color: #f4f4f4;
 }
@@ -121,7 +135,7 @@ body {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 90px;
+    padding-top: 70px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -183,6 +197,16 @@ body {
 .services .icon {
     text-align: center;
     display: block;
+}
+
+.services .icon_text {
+    color: #ed145b;
+}
+
+.services .icon_text:hover {
+    color: #ed145b;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .icon1,
@@ -265,8 +289,7 @@ body {
     border-radius: 25px 25px;
     color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
-    margin-top: -45px;   
+    font-weight: bold;   
 }
 
 .prices .but_hot {
@@ -276,8 +299,7 @@ body {
     border-radius: 25px 25px;
     color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
-    margin-top: -45px;   
+    font-weight: bold;  
     background-color: #ed145b;
 }
 
@@ -286,6 +308,11 @@ body {
     padding-top: 75px;
     background-color: #fff;
     font-size: 15px;
+}
+
+.prices_tabs form {
+    background: #fff;
+    margin-top: -20px;
 }
 
 .prices button {
@@ -300,6 +327,10 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
+.prices button:focus {
+    outline: none;
+}   
 
 .container_tags {
     display: grid;
@@ -338,15 +369,20 @@ body {
     margin-bottom: 70px;
 }
 
-.portfolio {
+.portfolio,
+.error,
+.about-php {
     background-color: #f4f4f4;
 }
 
-.container_portfolio {
+.container_portfolio,
+.container_error,
+.container_about-php,
+.container_content {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 90px;
+    padding-top: 70px;
     text-align: center;
 }
 
@@ -361,6 +397,7 @@ body {
 .portfolio_item {
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 50px;
 }
 
 .portfolio_item img {
@@ -368,7 +405,8 @@ body {
     width: 290px;
 }
 
-.portfolio_item h4 {
+.portfolio_item h4,
+.personal {
     margin-left: 5px;
     margin-top: 25px;
     text-align: left;
@@ -376,12 +414,154 @@ body {
     font-size: 18px;
 }
 
-.portfolio_item p {
+.portfolio_item p,
+.personal {
     margin-left: 5px;
     margin-top: 25px;
     text-align: left;
     font-size: 15px;
 }
+
+.container_error {
+    height: 74vh;
+}
+
+.about-php .company{
+    width: inherit;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-php p {
+    margin-top: 50px;
+}
+
+.portfolio_item .personal {
+    width: auto;
+    text-align: center;
+}
+
+.about_personal {
+   margin-top: 100px;
+}
+
+.contacts_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+}
+
+.contacts_item p {
+    color: #ed145b;
+    text-align:left;
+}
+
+.contacts_item span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button_serv {
+    margin-top: 35px;
+    background-color: #ed145b;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px 25px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: -750px;
+    margin-bottom: 100px;
+}
+
+.button_serv:focus {
+    outline: none;
+}
+
+.a_serv {
+    color: #fff;
+    text-decoration: none; 
+}
+
+.a_serv:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form {
+    background-color: #f4f4f4;
+}
+
+.container_form {
+    padding-top: 70px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.form hr {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: #ed145b;
+    height: 1px;
+}
+
+.form_order {
+    margin-top: 55px;
+}
+
+.form_order p {
+    color: #ed145b;
+    font-weight: bold;
+    
+}
+
+.form_order hr {
+    width: 20%;
+}
+
+.order {
+    margin-top: 40px;
+}
+
+.form_order input {
+    font-style: italic;
+}
+
+.form_order .radio {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+.form_order button {
+    background-color: #ed145b;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px 25px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.form_order button:focus {
+    outline: none;
+}
+
+
+.form_order button:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
 
 .footer {
     background-color: #000;
@@ -402,6 +582,7 @@ body {
     color: #fff;
     font-weight: bold;
     text-align: left;
+    font-size: 14px;
 }
 
 .footer p:last-child {
