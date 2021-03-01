@@ -63,7 +63,8 @@ body {
 .container_services,
 .container_prices,
 .container_about-php,
-.container_contacts {
+.container_contacts,
+.container_thanks {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -86,7 +87,8 @@ body {
 .prices hr,
 .portfolio hr,
 .about-php hr,
-.contacts hr{
+.contacts hr,
+.thanks hr{
     width: 15%;
     margin-left: auto;
     margin-right: auto;
@@ -561,7 +563,17 @@ body {
     font-weight: bold;
 }
 
+.thanks {
+    min-height: 74.9vh;
+}
 
+.link_ths {
+    display: inline-block;
+    color:#ed145b;
+    padding-top: 100px;
+    text-decoration: none;
+    
+}
 
 .footer {
     background-color: #000;

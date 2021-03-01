@@ -6,7 +6,7 @@ abstract class Main {
     
     static function check($path) {
 
-        $array_nav = ['home','about','services','prices', 'contacts','form'];
+        $array_nav = ['home','about','services','prices', 'contacts','form','thanks'];
         $array_services = ['services-editable', 'services-download', 'services-design', 'services-responsive'];
 
         $main_path = in_array($path, $array_nav);

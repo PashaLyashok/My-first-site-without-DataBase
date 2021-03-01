@@ -8,16 +8,10 @@ namespace App;
 
         function __construct($name, $email, $phone, $product) {
             
-           /*$this->add([
-                'name' => $name,
-                'email' => $email,
-                'phone' => $phone,
-                'product' => $product
-            ]);*/
-            if(!empty($name)) $this->name = $name;
-            if(!empty($email)) $this->email = $email;
-            if(!empty($phone)) $this->phone = $phone;
-            if(!empty($product)) $this->product = $product;
+            if(!empty($name) && $name != '') $this->name = $name;
+            if(!empty($email) && $email != '') $this->email = $email;
+            if(!empty($phone) && $phone != '') $this->phone = $phone;
+            if(!empty($product) && $product != '') $this->product = $product;
         }
 
         function add($data) {
