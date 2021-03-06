@@ -52,6 +52,52 @@ body {
     text-decoration: none;
 }
 
+.dropbtn {
+    background-color: #ed145b;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #b92929;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
 .bilboard {
     background-image: url("/img/bilboard_bg.png");
     background-position: center;
@@ -166,7 +212,7 @@ body {
 
 .about_left a {
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 1px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 15px;
