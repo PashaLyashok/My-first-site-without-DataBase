@@ -27,7 +27,11 @@ body {
     padding-top: 25px;
     padding-bottom: 15px;
     display: grid;
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+}
+
+.nav {
+    text-align: left;
 }
 
 .nav ul {
@@ -39,6 +43,7 @@ body {
     text-decoration: none;
     margin-left: 20px;
     margin-right: 20px;
+    
 }
 
 .nav a {
